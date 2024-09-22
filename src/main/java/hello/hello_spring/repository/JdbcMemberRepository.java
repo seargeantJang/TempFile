@@ -134,7 +134,7 @@ public class JdbcMemberRepository implements MemberRepository {
             e.printStackTrace();
         }
     }
-    private void close(Connection conn) throws SQLException {
+    private void  close(Connection conn) throws SQLException {
         DataSourceUtils.releaseConnection(conn, dataSource);
     }
 }
